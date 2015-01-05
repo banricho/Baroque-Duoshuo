@@ -1,4 +1,4 @@
-<div id="comments" data-no-instant>
+<div id="comments">
 	<div class="title">评论</div>
 	<div class="info">
 		<span class="ds-thread-count" data-thread-key="<?php $this->cid(); ?>"></span>

@@ -1,7 +1,7 @@
 <div id="footer">
 	<div id="bottomnav">
 		<?php if ($this->is('index')): ?>
-		<div class="list links" data-no-instant>
+		<div class="list links">
 			<h3>友情链接</h3>
 			<ul>
 				<?php Links_Plugin::output(); ?>
@@ -32,7 +32,7 @@
 		</div>
 	</div>
 	<div id="bottom">
-		<div id="copyright" data-no-instant>
+		<div id="copyright">
 			&copy; 2012 - 2015 <?php $this->options->title() ?>.
 			Powered by <a href="http://typecho.org" target="_blank">Typecho</a> &amp; <a href="http://duoshuo.com" target="_blank">Duoshuo</a>.
 			Designed by <a href="http://banri.me" target="_blank">Banri</a>.
@@ -41,9 +41,7 @@
 	</div>
 </div>
 <?php $this->footer(); ?>
-<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js" data-no-instant></script>
-<script src="<?php $this->options->themeUrl('common.js'); ?>" data-no-instant></script>
-<script src="<?php $this->options->themeUrl('instantclick.min.js'); ?>" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js"></script>
+<script src="<?php $this->options->themeUrl('common.js'); ?>"></script>
 </body>
 </html>
