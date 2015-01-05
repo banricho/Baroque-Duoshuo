@@ -4,14 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php if ( $this->is('single') || $this->is('page') || $this->is('category') || $this->is('tag') ) { $this->archiveTitle('','',''); } else { $this->options->title(); } ?></title>
-
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style.css'); ?>" />
-<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js"></script>
-<script src="<?php $this->options->themeUrl('common.js'); ?>"></script>
-<!--[if IE 6]>
-	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
-
 <?php $this->header("generator=&template="); ?>
 </head>
 <body>
