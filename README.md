@@ -33,9 +33,10 @@ var duoshuoQuery = {short_name:"在此填入多说ID"};
 #ds-smilies-tooltip .ds-smilies-container { margin-left: 0 !important; height: auto !important;}
 #ds-thread #ds-reset .ds-textarea-wrapper { background: none !important;}
 #ds-reset .ds-gradient-bg { background: #FBFBFB !important;}
-#ds-thread #ds-reset .ds-post-button { position: absolute !important; left: 0 !important; top: 45px !important; font-weight: normal !important; font-size: 12px !important; text-shadow: none !important; border: 0 !important; height: 23px !important; line-height: 23px !important; width: 52px !important; background: #00A3CF !important; color: #FFF !important;}
+#ds-thread #ds-reset .ds-post-button { position: absolute !important; left: 0 !important; top: 45px !important; font-weight: normal !important; font-size: 12px !important; text-shadow: none !important; border: 0 !important; height: 26px !important; line-height: 26px !important; width: 52px !important; background: #00A3CF !important; color: #FFF !important;}
 #ds-thread #ds-reset button:hover, #ds-thread #ds-reset button:active { background: #40C8C9 !important; color: #FFF !important; box-shadow: none !important;}
 #ds-thread #ds-reset button:active { background: #017CB9 !important;}
+#ds-thread #ds-reset button:focus { outline: none !important;}
 #ds-thread #ds-reset .ds-textarea-wrapper textarea:focus { color: #666 !important;}
 #ds-thread #ds-reset .ds-comment-body p { color: #666 !important;}
 #ds-thread #ds-reset .ds-textarea-wrapper, #ds-thread #ds-reset .ds-post-options, #ds-thread #ds-reset .ds-post-button { border-radius: 0 !important;}
@@ -50,8 +51,3 @@ var duoshuoQuery = {short_name:"在此填入多说ID"};
 #ds-thread #ds-reset .ds-paginator { text-align:center !important;}
 .ds-comments-info { padding: 30px 0 !important;}
 ```
-
-##反馈
-
-我不经常上GitHub，有什么问题可以到我的Blog反馈 =w=  
-http://banri.me
