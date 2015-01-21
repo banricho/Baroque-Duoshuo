@@ -21,4 +21,5 @@ $(function(){
     $('#totop').click(function(){
         $('body,html').animate({scrollTop:0},200)
     });
+    $(".content a").attr("target","_blank");
 });
