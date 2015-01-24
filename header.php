@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform">
 <title><?php if ( $this->is('single') || $this->is('page') || $this->is('category') || $this->is('tag') ) { $this->archiveTitle('','',''); } else { $this->options->title(); } ?></title>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style.css'); ?>" />
 <?php $this->header("generator=&template="); ?>
