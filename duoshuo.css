@@ -1,0 +1,159 @@
+#ds-thread #ds-reset .ds-sort,
+#ds-thread #ds-reset #ds-bubble,
+#ds-thread #ds-reset .ds-powered-by,
+#ds-reset .ds-logo,
+#ds-wrapper #ds-reset .ds-dialog-footer,
+.ds-post-likes,
+.ds-post-report,
+.ds-post-repost,
+#ds-smilies-tooltip ul.ds-smilies-tabs,
+.ds-comments-tabs,
+#ds-thread #ds-reset .ds-login-buttons {
+    display: none !important;
+}
+#ds-thread #ds-reset li.ds-tab a {
+    font-size: 1rem !important;
+
+    color: #999 !important;
+    border: 0 !important;
+    background: none !important;
+}
+#ds-thread #ds-reset a.ds-comment-context,
+.page-break {
+    color: #999 !important;
+}
+#ds-thread #ds-reset ul.ds-comments-tabs .ds-highlight,
+#ds-notify #ds-reset ul.ds-notify-unread li a,
+#ds-wrapper #ds-reset .ds-unread-list li a,
+#ds-wrapper #ds-reset .ds-unread-list li a:hover {
+    color: #2cb4bf !important;
+}
+#ds-wrapper #ds-reset .ds-unread-list li a:hover,
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+    text-decoration: underline;
+}
+#ds-thread #ds-reset li.ds-post {
+    border-top: 1px dotted #ddd !important;
+}
+#ds-thread #ds-reset .ds-comments,
+#ds-thread #ds-reset .ds-paginator {
+    border-bottom: 1px dotted #ddd !important;
+}
+#ds-reset .ds-avatar img {
+    box-shadow: none !important;
+}
+#ds-thread #ds-reset ul.ds-children {
+    margin-left: 50px !important;
+}
+#ds-reset .ds-highlight,
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services,
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+    color: #999 !important;
+}
+#ds-thread #ds-reset .ds-comment-body p,
+#ds-thread #ds-reset .ds-textarea-wrapper textarea,
+#ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
+    font-size: 1rem !important;
+}
+#ds-thread #ds-reset .ds-post-self {
+    padding: 20px 10px !important;
+}
+#ds-notify #ds-reset ul.ds-notify-unread {
+    margin: 0 !important;
+}
+#ds-thread #ds-reset .ds-replybox {
+    margin: 0 !important;
+}
+#ds-smilies-tooltip .ds-smilies-container {
+    height: auto !important;
+    margin-left: 0 !important;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    background: none !important;
+}
+#ds-reset .ds-gradient-bg {
+    background: #fbfbfb !important;
+}
+#ds-thread #ds-reset .ds-post-button {
+    font-size: 0.875rem !important;
+    font-weight: normal !important;
+    line-height: 26px !important;
+
+    position: absolute !important;
+    top: 45px !important;
+    left: 0 !important;
+
+    width: 52px !important;
+    height: 26px !important;
+
+    color: #fff !important;
+    border: 0 !important;
+    background: #00a3cf !important;
+    text-shadow: none !important;
+}
+#ds-thread #ds-reset button:hover,
+#ds-thread #ds-reset button:active {
+    color: #fff !important;
+    background: #40c8c9 !important;
+    box-shadow: none !important;
+}
+#ds-thread #ds-reset button:active {
+    background: #017cb9 !important;
+}
+#ds-thread #ds-reset button:focus {
+    outline: none !important;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea:focus {
+    color: #666 !important;
+}
+#ds-thread #ds-reset .ds-comment-body p {
+    color: #666 !important;
+}
+#ds-thread #ds-reset .ds-comment-body {
+    padding-left: 70px !important;
+}
+#ds-thread #ds-reset ul.ds-children .ds-comment-body {
+    padding-left: 50px !important;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper,
+#ds-thread #ds-reset .ds-post-options,
+#ds-thread #ds-reset .ds-post-button {
+    border-radius: 0 !important;
+}
+#ds-thread #ds-reset .ds-post-options {
+    margin-right: 0 !important;
+
+    border: 1px solid #ccc !important;
+}
+#ds-smilies-tooltip,
+#ds-thread #ds-reset .ds-account-control ul {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+#ds-thread #ds-reset .ds-inline-replybox {
+    margin: 18px 0 38px 0 !important;
+}
+#ds-thread #ds-reset .ds-post-self {
+    border: 0 !important;
+}
+.ds-user-name {
+    font-size: 1rem !important;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif !important;
+}
+#ds-thread #ds-reset .ds-time  {
+    font-size: 0.875rem !important;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif !important;
+}
+#ds-thread #ds-reset .ds-paginator a.ds-current,
+#ds-thread #ds-reset a {
+    color: #999 !important;
+}
+#ds-notify {
+    z-index: 10001 !important;
+}
+#ds-thread #ds-reset .ds-paginator {
+    text-align: center !important;
+}
+.ds-comments-info {
+    padding: 30px 0 !important;
+}

@@ -1,30 +1,40 @@
 <?php
 /**
- * <a href="http://banri.me">Banri's</a>
- * 
- * @package Theme-Banri
- * @author Banri
- * @version 2.1.0
+ * theme baroque for typecho
+ *
+ * @package baroque
+ * @author banri
+ * @version 3.0
  * @link http://banri.me
  */
 
- $this->need('header.php');
- ?>
-<div id="wrap" class="width">
-    <div>
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php');
+?>
+
+<div class="wrapper">
+    <div class="main" role="main">
         <?php while($this->next()): ?>
-        <div class="loop">
-            <h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
-            <div class="info">
-                <?php $this->date('Y年m月d日'); ?><span class="line">|</span><?php $this->category('&#12288;'); ?><span class="line">|</span><a href="<?php $this->permalink() ?>#comments" class="ds-thread-count" data-thread-key="<?php $this->cid(); ?>"></a><span class="line">|</span>标签：<?php $this->tags('&#12288;', true, '无'); ?>
-            </div>
-            <div class="content"><?php $this->content('Read More'); ?></div>
-        </div>
+            <article class="post">
+                <h2 class="post-title" itemprop="name headline">
+                    <a itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                </h2>
+
+                <div class="post-meta">
+                    <span><?php $this->category(','); ?></span><span datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('n月j日'); ?></span>
+                </div>
+
+                <div class="post-content" itemprop="articleBody">
+                    <?php $this->content('- 阅读全文 -'); ?>
+                </div>
+            </article>
         <?php endwhile; ?>
     </div>
-    <div id="page">
+
+    <div class="pagenav clearfix">
         <?php $this->pageLink('&lt;','prev'); ?>
         <?php $this->pageLink('&gt;','next'); ?>
     </div>
 </div>
+
 <?php $this->need('footer.php'); ?>

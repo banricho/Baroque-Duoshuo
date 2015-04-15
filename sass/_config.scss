@@ -1,0 +1,40 @@
+/* ==========================================================================
+   配置文件
+   如有疑问或建议请访问 brdev.org
+   ========================================================================== */
+
+$body-bg: #eee; //页面背景
+$common-col: #00a3cf; //主色调（默认蓝）
+
+$main-wid: 1000px; //主体宽度
+$main-bg: #fff; //主体背景
+$main-col: #555; //正文颜色
+
+$post-pd: 2.5rem; //文章上下内边距
+$title-size: 1.4rem; //文章标题大小
+$title-col: #444; //文章标题颜色
+$title-col-h: $common-col; //文章标题悬停颜色
+$meta-col: #999; //文章信息颜色
+$meta-col-h: $title-col; //文章信息悬停颜色
+$meta-line-col: #ccc; //文章信息分割线颜色
+
+$content-t-l: $meta-line-col; //正文小标题分割线颜色
+$content-link: $common-col; //正文链接颜色
+$content-link-h: #00c4df; //正文链接悬停颜色
+
+$page-col: $meta-col; //页码颜色
+$page-col-h: $common-col; //页码悬停颜色
+
+$head-bg: #333; //顶部背景
+$head-hig: 3rem; //顶部高度
+$nav-link: #fff; //导航文字颜色
+$nav-link-h: #ccc; //导航文字悬停颜色
+$logo-wid: $head-hig*2; //站点名宽度
+$search-col: #999; //搜索框文字颜色
+$search-col-f: $main-col; //搜索框焦点文字颜色
+
+$foot-bg: $head-bg; //底部背景
+$foot-link: $nav-link; //底部文字颜色
+$foot-link-h: $nav-link-h; //底部文字悬停颜色
+$foot-line: #999; //底部分割线颜色
+$cpr-link: #555; //底部图标颜色

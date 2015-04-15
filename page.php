@@ -1,12 +1,14 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<div id="wrap" class="width">
-    <div id="article">
-        <h2><?php $this->title() ?></h2>
-        <div class="info">最后编辑@<?php echo gmdate('Y-m-d H:i:s', $this->modified + Typecho_Widget::widget('Widget_Options')->timezone); ?></div>
-        <div class="content">
-            <?php $this->content(''); ?>
+
+<div class="wrapper main" role="main">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title no-meta" itemprop="name headline"><?php $this->title() ?></h1>
+        <div class="post-content" itemprop="articleBody">
+            <?php $this->content(); ?>
         </div>
-    </div>
+    </article>
     <?php $this->need('comments.php'); ?>
 </div>
+
 <?php $this->need('footer.php'); ?>

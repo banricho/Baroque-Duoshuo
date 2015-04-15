@@ -1,14 +1,17 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<div id="wrap" class="width">
-    <div id="article">
-        <h2><?php $this->title() ?></h2>
-        <div class="info">
-            <?php $this->date('Y年m月d日'); ?><span class="line">|</span><?php $this->category('&#12288;'); ?><span class="line">|</span><span class="ds-thread-count" data-thread-key="<?php $this->cid(); ?>"></span><span class="line">|</span>标签：<?php $this->tags('&#12288;', true, '无'); ?>
+
+<div class="wrapper main" role="main">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline"><?php $this->title() ?></h1>
+        <div class="post-meta">
+            <span class="post-category"><?php $this->category(','); ?></span><span datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('n月j日'); ?></span>
         </div>
-        <div class="content">
-            <?php $this->content(''); ?>
+        <div class="post-content" itemprop="articleBody">
+            <?php $this->content(); ?>
         </div>
-    </div>
+    </article>
     <?php $this->need('comments.php'); ?>
 </div>
+
 <?php $this->need('footer.php'); ?>

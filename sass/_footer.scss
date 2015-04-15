@@ -1,0 +1,117 @@
+.footer {
+    padding: 1.5rem 0;
+
+    color: $nav-link;
+    background: $foot-bg;
+
+    @include link($foot-link, $foot-link-h);
+}
+
+.btm {
+    box-sizing: border-box;
+    padding: 0 $logo-wid/2;
+}
+
+.btm-nav {
+    float: left;
+
+    width: 30%;
+    & + & {
+        margin-left: 5%;
+    }
+}
+
+.btm-title {
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin: 0;
+    padding-bottom: .5rem;
+
+    border-bottom: 1px dotted $foot-line;
+}
+
+.btm-list {
+    font-size: .875rem;
+
+    overflow: hidden;
+
+    height: 7.5rem;
+    margin: .5rem 0 0;
+    padding: 0;
+    li {
+        line-height: 1.5rem;
+
+        height: 1.5rem;
+
+        list-style-type: none;
+
+        @include over;
+        &:hover {
+            color: $foot-link-h;
+        }
+    }
+    a:hover {
+        border-bottom: 1px dotted $foot-link-h;
+    }
+}
+
+.links li {
+    float: left;
+
+    width: 50%;
+}
+
+.tags {
+    height: 4.5rem;
+    margin: .5rem 0;
+    li {
+        float: left;
+
+        margin-right: 1rem;
+    }
+}
+
+.cpr {
+    font-size: 1.2rem;
+    line-height: 3rem;
+
+    overflow: hidden;
+
+    height: 2.5rem;
+
+    border-top: 1px dotted $foot-line;
+
+    @include link($cpr-link,$foot-link-h);
+    a {
+        margin-right: 10%;
+        &:after {
+            content: attr(data-icon);
+
+            @include icon;
+        }
+    }
+}
+
+#gotop {
+    font-size: 2rem;
+
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+
+    width: 40px;
+    height: 40px;
+    margin-left: ($main-wid - 40px)/2;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #ccc;
+
+    @include icon;
+    @include trans;
+    &:hover {
+        color: #fff;
+    }
+}

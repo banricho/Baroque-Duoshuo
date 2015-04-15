@@ -1,0 +1,76 @@
+.main {
+    margin-top: $head-hig;
+
+    background: $main-bg;
+}
+
+.post {
+    padding: $post-pd $logo-wid/2;
+
+    word-wrap: break-word;
+
+    border-bottom: 1px dashed #ccc;
+}
+
+.post:nth-child(2n) {
+    background: #fbfbfb;
+}
+
+.post:last-child {
+    border: 0 none;
+    background: $main-bg;
+}
+
+.post-title,
+.post-meta {
+    padding: .2rem 0 .2rem 1.6rem;
+
+    border-left: .4rem solid $common-col;
+
+    @include over;
+}
+
+.post-title {
+    font-size: $title-size;
+
+    margin: 0;
+
+    @include link($title-col, $title-col-h);
+}
+
+.post-meta {
+    margin-bottom: 2rem;
+
+    color: $meta-col;
+    border-color: $meta-line-col;
+
+    @include link($meta-col, $meta-col-h);
+    span + span:before {
+        margin: 0 1rem;
+
+        content: '\002f';
+
+        color: $meta-line-col;
+    }
+}
+
+.no-meta {
+    margin-bottom: 2rem;
+}
+
+.pagenav {
+    font-size: 2rem;
+
+    padding: 0 $logo-wid/2 $post-pd;
+
+    background: $main-bg;
+
+    @include icon;
+    @include link($page-col, $page-col-h);
+    .prev {
+        float: left;
+    }
+    .next {
+        float: right;
+    }
+}

@@ -1,0 +1,76 @@
+html {
+    font-size: 87.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+
+    color: $main-col;
+    background: $body-bg;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #333;
+}
+::selection {
+    color: #fff;
+    background: #333;
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.wrapper {
+    max-width: $main-wid;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'baroque';
+
+    src: url('fonts/baroque.eot');
+    src: url('fonts/baroque.eot?#iefix') format('embedded-opentype'),
+    url('fonts/baroque.woff') format('woff'),
+    url('fonts/baroque.ttf') format('truetype'),
+    url('fonts/baroque.svg#iconfont') format('svg');
+}
+
+@mixin link($link-col, $hover-col) {
+    a,
+    a:link,
+    a:visited {
+        color: $link-col;
+    }
+    a:hover,
+    a:active {
+        color: $hover-col;
+    }
+}
+
+@mixin icon {
+    font-family: 'baroque';
+
+    speak: none;
+}
+
+@mixin over {
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin trans {
+    -webkit-transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+         -o-transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+            transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+}
+
+a {
+    @include trans;
+}

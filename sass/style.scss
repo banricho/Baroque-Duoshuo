@@ -1,0 +1,18 @@
+/*! theme baroque by banri.me */
+@import 'reset', 'config', 'common', 'header', 'main', 'content', 'footer', 'media';
+
+/* --------------------------------------------------------------------------
+    文件结构：
+
+    _reset.scss        浏览器默认样式重置
+    _config.scss       用户自定义配置文件
+    _common.scss       通用代码段
+    _header.scss       页面顶部样式
+    _main.scss         首页主体部分样式
+    _content.scss      文章内容页样式
+    _footer.scss       页面底部样式
+    _media.scss        响应式部分
+
+    大多情况可通过修改 _config.scss 实现自定义，修改后使用 Compass 进行编译即可
+    如有疑问和建议请访问 brdev.org
+   -------------------------------------------------------------------------- */

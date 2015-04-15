@@ -1,0 +1,26 @@
+@media only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 240dpi),
+       only screen and (min-resolution: 2dppx),
+       only screen and (min-width: 1900px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: $main-wid) {
+    .logo,
+    .tri,
+    .search,
+    .footer {
+        display: none;
+    }
+    .nav {
+        position: static;
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
