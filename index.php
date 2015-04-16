@@ -21,7 +21,7 @@ $this->need('header.php');
                 </h2>
 
                 <div class="post-meta">
-                    <span><?php $this->category(','); ?></span><span datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('n月j日'); ?></span>
+                    <span><?php $this->category(','); ?></span><span datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('n月j日'); ?></span><span class="ds-thread-count" data-thread-key="<?php $this->cid(); ?>"></span>
                 </div>
 
                 <div class="post-content" itemprop="articleBody">

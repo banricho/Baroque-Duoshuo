@@ -16,6 +16,7 @@
     .footer {
         display: none;
     }
+
     .nav {
         position: static;
 
@@ -29,9 +30,33 @@
     .nav a {
         margin-right: 1rem;
     }
+
     .post {
-        padding: 1rem;
+        padding: 1.5rem 1rem;
     }
+
+    .post-title {
+        font-size: 1.2rem;
+    }
+
+    .post-title, .post-meta {
+        border: 0 none;
+        padding: 0;
+    }
+
+    .post-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1rem;
+
+            margin: 1rem 0 .5rem;
+        }
+    }
+
     .post-meta,
     .no-meta {
         margin-bottom: 1rem;
