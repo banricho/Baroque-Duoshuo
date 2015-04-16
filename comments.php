@@ -1,5 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<div class="post">
+<div id="comments" class="post">
     <h3 class="post-title">评论</h3>
     <?php if($this->allow('comment')): ?>
         <div class="post-meta">
