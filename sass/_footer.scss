@@ -79,17 +79,25 @@
     overflow: hidden;
 
     height: 2.5rem;
+    margin: 0;
+    padding: 0;
 
     border-top: 1px dotted $foot-line;
 
     @include link($cpr-link,$foot-link-h);
     a {
-        margin-right: 10%;
         &:after {
             content: attr(data-icon);
 
             @include icon;
         }
+    }
+    li {
+        display: inline-block;
+
+        width: 20%;
+
+        list-style-type: none;
     }
 }
 

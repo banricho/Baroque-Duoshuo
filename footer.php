@@ -8,20 +8,20 @@
                     <?php Links_Plugin::output(); ?>
                 </ul>
             <?php else: ?>
-                <h3 class="btm-title">随机文章</h3>
+                <h3 class="btm-title">最新文章</h3>
                 <ul class="btm-list">
-                    <?php RandomArticleList::parse(); ?>
+                    <?php $this->widget('Widget_Contents_Post_Recent')->to($post); ?>
+                    <?php while($post->next()): ?>
+                        <li><a href="<?php $post->permalink(); ?>"><?php $post->title(); ?></a></li>
+                    <?php endwhile; ?>
                 </ul>
             <?php endif; ?>
         </div>
 
         <div class="btm-nav">
-            <h3 class="btm-title">最新文章</h3>
+            <h3 class="btm-title">随机文章</h3>
             <ul class="btm-list">
-                <?php $this->widget('Widget_Contents_Post_Recent')->to($post); ?>
-                <?php while($post->next()): ?>
-                    <li><a href="<?php $post->permalink(); ?>"><?php $post->title(); ?></a></li>
-                <?php endwhile; ?>
+                <?php RandomArticleList::parse(); ?>
             </ul>
         </div>
 
@@ -30,13 +30,13 @@
             <ul class="btm-list tags clearfix">
                 <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 20))->parse('<li><a href="{permalink}" title="{count} 个相关">{name}</a></li>'); ?>
             </ul>
-            <div class="cpr">
-                <a href="http://weibo.com/banrikun" target="_blank" title="新浪微博" data-icon="s"></a>
-                <a href="https://github.com/banrikun" target="_blank" title="GitHub" data-icon="g"></a>
-                <a href="http://brdev.org" target="_blank" title="学习笔记" data-icon="c"></a>
-                <a href="<?php $this->options->feedUrl(); ?>" target="_blank" title="订阅我" data-icon="f"></a>
-                <a href="http://typecho.org" target="_blank" title="Powered by Typecho" data-icon="t"></a>
-            </div>
+            <ul class="cpr">
+                <li><a href="http://weibo.com/banrikun" target="_blank" title="新浪微博" data-icon="s"></a>
+                </li><li><a href="https://github.com/banrikun" target="_blank" title="GitHub" data-icon="g"></a>
+                </li><li><a href="http://brdev.org" target="_blank" title="学习笔记" data-icon="c"></a>
+                </li><li><a href="<?php $this->options->feedUrl(); ?>" target="_blank" title="订阅我" data-icon="f"></a>
+                </li><li><a href="http://typecho.org" target="_blank" title="Powered by Typecho" data-icon="t"></a></li>
+            </ul>
         </div>
     </div>
 </footer>
