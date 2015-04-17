@@ -35,13 +35,19 @@
         padding: 1.5rem 1rem;
     }
 
-    .post-title {
-        font-size: 1.2rem;
+    article {
+        .post-meta {
+            display: none;
+        }
+        .post-title {
+            padding: 0;
+
+            border: 0 none;
+        }
     }
 
-    .post-title, .post-meta {
-        border: 0 none;
-        padding: 0;
+    .no-meta {
+        margin-bottom: 1rem;
     }
 
     .post-content {
@@ -55,10 +61,5 @@
 
             margin: 1rem 0 .5rem;
         }
-    }
-
-    .post-meta,
-    .no-meta {
-        margin-bottom: 1rem;
     }
 }
