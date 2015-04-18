@@ -61,5 +61,12 @@
 .more {
     font-weight: 700;
 
+    a {
+        margin: 0;
+        &:hover {
+            border: 0 none;
+        }
+    }
+
     @include link($meta-col, $common-col);
 }
