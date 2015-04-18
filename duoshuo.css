@@ -168,7 +168,8 @@
 
 .ds-user-name,
 #ds-thread #ds-reset .ds-time,
-#ds-thread #ds-reset .ds-post-button {
+#ds-thread #ds-reset .ds-post-button,
+.ds-textarea-wrapper textarea {
     font-family: 'Source Sans Pro', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif !important;
     font-size: 1rem !important;
 }

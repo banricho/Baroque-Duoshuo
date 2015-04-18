@@ -5,7 +5,7 @@
             <?php if ($this->is('index')): ?>
                 <h3 class="btm-title">友情链接</h3>
                 <ul class="btm-list links clearfix">
-                    <?php Links_Plugin::output(); ?>
+                    <?php Links_Plugin::output($pattern=NULL, $links_num=10, $sort=NULL); ?>
                 </ul>
             <?php else: ?>
                 <h3 class="btm-title">最新文章</h3>
