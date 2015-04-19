@@ -61,9 +61,9 @@
 }
 
 .search {
-    padding: ($head-hig - 1.6rem)/2 0;
+    margin: ($head-hig - 1.6rem)/2 0;
 
-    @include head-right($logo-wid*1.25);
+    @include head-right($logo-wid*1.5);
     input {
         box-sizing: border-box;
         width: 10rem;
@@ -85,11 +85,15 @@
         }
     }
     &:after {
-        line-height: $head-hig;
+        position: relative;
+        right: $logo-wid/4;
 
-        position: absolute;
-        top: 0;
-        right: .5rem;
+        display: block;
+        float: right;
+
+        box-sizing: border-box;
+        height: 1.6rem;
+        padding: .3rem 0;
 
         content: '\641c';
         pointer-events: none;
