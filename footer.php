@@ -33,9 +33,9 @@
             <ul class="cpr">
                 <li><a href="http://weibo.com/banrikun" target="_blank" title="新浪微博" data-icon="s"></a>
                 </li><li><a href="https://github.com/banrikun" target="_blank" title="GitHub" data-icon="g"></a>
-                </li><li><a href="http://brdev.org" target="_blank" title="学习笔记" data-icon="c"></a>
                 </li><li><a href="<?php $this->options->feedUrl(); ?>" target="_blank" title="订阅我" data-icon="f"></a>
-                </li><li><a href="http://typecho.org" target="_blank" title="Powered by Typecho" data-icon="t"></a></li>
+                </li><li><a href="http://typecho.org" target="_blank" title="Powered by Typecho" data-icon="t"></a>
+                </li><li><a href="http://brdev.org" target="_blank" title="学习笔记" data-icon="c"></a></li>
             </ul>
         </div>
     </div>
