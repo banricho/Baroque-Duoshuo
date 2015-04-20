@@ -41,6 +41,7 @@
     </div>
 </footer>
 
+<script src="<?php $this->options->themeUrl('scripts/common.js'); ?>" async></script>
 <script src="<?php $this->options->themeUrl('scripts/ds.js'); ?>" async></script>
 <?php $this->footer(); ?>
 </body>

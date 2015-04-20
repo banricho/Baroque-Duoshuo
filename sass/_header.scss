@@ -10,7 +10,7 @@
     background: $head-bg;
 }
 
-.nav {
+#nav {
     line-height: $head-hig;
 
     position: relative;
@@ -100,4 +100,8 @@
 
         @include icon;
     }
+}
+
+#toggle {
+    display: none;
 }

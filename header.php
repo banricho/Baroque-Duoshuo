@@ -26,7 +26,7 @@
 <body>
     <header class="header">
         <div class="wrapper clearfix">
-            <nav class="nav" role="navigation">
+            <nav id="nav" role="navigation">
                 <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>">
                     <?php _e('首页'); ?>
                 </a>
@@ -51,5 +51,10 @@
             <form class="search" method="post" action="/" role="search">
                 <input type="search" name="s" autocomplete="off">
             </form>
+            <div id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>

@@ -10,29 +10,80 @@
 }
 
 @media only screen and (max-width: $main-wid) {
-    .logo,
     .tri,
     .search,
     .footer {
         display: none;
     }
 
-    .nav {
-        position: static;
+    .header {
+        background: $common-col;
+    }
 
-        width: 100%;
+    #nav {
+        position: fixed;
+        top: $head-hig;
+        right: 0;
+
+        display: none;
+        overflow: hidden;
+
+        width: auto;
 
         text-align: center;
-    }
-}
 
-@media only screen and (max-width: 750px) {
-    .nav a {
-        margin-right: 1rem;
+        background: $head-bg;
+    }
+
+    #nav.show-menu {
+        display: block;
+    }
+
+    #nav a {
+        display: block;
+
+        margin: 0 2rem;
+    }
+
+    .logo {
+        position: static;
+
+        float: none;
+
+        margin: 0 auto;
+
+        background: none;
+    }
+
+    #toggle {
+        position: absolute;
+        top: ($head-hig - 1.85rem)/2;
+        right: ($head-hig - 1.85rem)/2;
+
+        display: block;
+        overflow: hidden;
+
+        box-sizing: border-box;
+        width: 1.85rem;
+        height: 1.85rem;
+        padding: .15rem;
+    }
+
+    #toggle.show-btn {
+        background: rgba(255,255,255,.3);
+    }
+
+    #toggle span {
+        display: block;
+
+        height: .25rem;
+        margin: .2rem;
+
+        background: #fff;
     }
 
     .post {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1rem;
     }
 
     article {
