@@ -9,15 +9,21 @@ function toggle(e) {
     })(1);
 }
 
+function menu(e) {
+    var link = e.getElementsByTagName("a"),
+        mh = link.length * 40;
+    e.style.height = mh + "px";
+}
+
 window.onload = function() {
     var btn = document.getElementById("toggle"),
         nav = document.getElementById("nav");
 
     toggle(btn, function() {
         btn.className += "show-btn";
-        nav.className += "show-menu";
+        menu(nav);
     }, function() {
         btn.className = "";
-        nav.className = "";
+        nav.style.height = 0;
     });
 };

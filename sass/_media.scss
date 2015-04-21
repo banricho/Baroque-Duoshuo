@@ -25,23 +25,24 @@
         top: $head-hig;
         right: 0;
 
-        display: none;
         overflow: hidden;
 
         width: auto;
+        height: 0;
 
+        transition: height .3s;
+        transform: translate3d(0,0,0);
         text-align: center;
 
         background: $head-bg;
     }
 
-    #nav.show-menu {
-        display: block;
-    }
-
     #nav a {
+        line-height: 40px;
+
         display: block;
 
+        height: 40px;
         margin: 0 2rem;
     }
 
