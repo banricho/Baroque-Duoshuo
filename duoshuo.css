@@ -196,7 +196,7 @@
     padding: 30px 0 !important;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     #ds-reset .ds-avatar {
         display: none !important;
     }
@@ -208,5 +208,10 @@
     #ds-thread #ds-reset .ds-comment-body,
     #ds-thread #ds-reset ul.ds-children .ds-comment-body {
         padding-left: 0 !important;
+    }
+
+    #ds-smilies-tooltip {
+        width: auto !important;
+        margin-right: 1rem !important;
     }
 }

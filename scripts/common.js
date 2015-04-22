@@ -20,7 +20,7 @@ window.onload = function() {
         nav = document.getElementById("nav");
 
     toggle(btn, function() {
-        btn.className += "show-btn";
+        btn.className = "show-btn";
         menu(nav);
     }, function() {
         btn.className = "";
