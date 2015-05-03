@@ -91,7 +91,8 @@
     background: #fbfbfb !important;
 }
 
-#ds-thread #ds-reset .ds-post-button {
+#ds-thread #ds-reset .ds-post-button,
+#ds-thread #ds-reset.ds-no-transition .ds-post-button {
     font-size: .875rem !important;
     font-weight: normal !important;
     line-height: 26px !important;
@@ -109,18 +110,15 @@
     text-shadow: none !important;
 }
 
-#ds-thread #ds-reset button:hover,
-#ds-thread #ds-reset button:active {
+#ds-thread #ds-reset .ds-post-button:hover,
+#ds-thread #ds-reset.ds-no-transition .ds-post-button:hover {
     color: #fff !important;
     background: #40c8c9 !important;
     box-shadow: none !important;
 }
 
-#ds-thread #ds-reset button:active {
-    background: #017cb9 !important;
-}
-
-#ds-thread #ds-reset button:focus {
+#ds-thread #ds-reset .ds-post-button:focus,
+#ds-thread #ds-reset.ds-no-transition .ds-post-button:focus {
     outline: none !important;
 }
 
