@@ -13,8 +13,9 @@ a theme for Typecho
 
 以下文件/文件夹无需上传：  
 sass/  
-README.md  
-config.rb
+config.rb  
+duoshuo.css  
+README.md
 
 ## 发布协议
 基于 Typecho 所用 GPLv2 协议要求，本主题也必须使用此协议发布。  
