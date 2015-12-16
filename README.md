@@ -2,7 +2,7 @@
 A Typecho Theme.
 
 **注意**
-此版本采用*多说评论框*，如需原生评论框请访问 Baroque-Normal 项目。
+此版本采用*多说评论框*，如需原生评论框请访问 [Baroque-Common][1] 项目。
 
 ## 主题简介
 原主题 Banri 正式更名为 Baroque，采用 Sass 进行重构。  
@@ -23,3 +23,5 @@ README.md
 ## 发布协议
 基于 Typecho 所用 GPLv2 协议要求，本主题也必须使用此协议发布。  
 您可以自由的修改、使用和传播，但请至少保留底部的 Typecho 官网链接。
+
+[1]: https://github.com/banricho/Baroque-Common 
