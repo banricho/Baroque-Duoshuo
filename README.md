@@ -1,8 +1,8 @@
 # Baroque
-a theme for Typecho
+A Typecho Theme.
 
 **注意**
-此版本采用多说评论框，如需原生评论框请访问 Baroque-Normal 项目。
+此版本采用*多说评论框*，如需原生评论框请访问 Baroque-Normal 项目。
 
 ## 主题简介
 原主题 Banri 正式更名为 Baroque，采用 Sass 进行重构。  
